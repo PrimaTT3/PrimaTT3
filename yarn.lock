@@ -5,6 +5,15 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"bootstrap@npm:^5.2.3":
+  version: 5.2.3
+  resolution: "bootstrap@npm:5.2.3"
+  peerDependencies:
+    "@popperjs/core": ^2.11.6
+  checksum: 0211805dec6a190c0911d142966df30fdb4b4139a04cc6c23dd83c6045ea3cb0a966b360ab2e701e7b3ad96ff01e05fdc0914be97b41bd876b11e457a8bdc6a3
+  languageName: node
+  linkType: hard
+
 "jquery@npm:^3.6.3":
   version: 3.6.3
   resolution: "jquery@npm:3.6.3"
@@ -41,6 +50,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "projet_tp@workspace:."
   dependencies:
+    bootstrap: ^5.2.3
     jquery: ^3.6.3
     prop-types: ^15.8.1
     react: ^18.2.0

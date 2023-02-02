@@ -28,12 +28,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["bootstrap", "virtual:ee4c35fb4679b523f7156ef488b8a345aba160cd2cc4d6cd0f7fbf7f7195236acb337ebbb5fcb30d6226b701524f166a494bf6553f85b6eb77c82d4861f0c29f#npm:5.2.3"],\
             ["jquery", "npm:3.6.3"],\
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:ee4c35fb4679b523f7156ef488b8a345aba160cd2cc4d6cd0f7fbf7f7195236acb337ebbb5fcb30d6226b701524f166a494bf6553f85b6eb77c82d4861f0c29f#npm:18.2.0"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["bootstrap", [\
+        ["npm:5.2.3", {\
+          "packageLocation": "./.yarn/cache/bootstrap-npm-5.2.3-7458283a23-0211805dec.zip/node_modules/bootstrap/",\
+          "packageDependencies": [\
+            ["bootstrap", "npm:5.2.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:ee4c35fb4679b523f7156ef488b8a345aba160cd2cc4d6cd0f7fbf7f7195236acb337ebbb5fcb30d6226b701524f166a494bf6553f85b6eb77c82d4861f0c29f#npm:5.2.3", {\
+          "packageLocation": "./.yarn/__virtual__/bootstrap-virtual-60404add78/0/cache/bootstrap-npm-5.2.3-7458283a23-0211805dec.zip/node_modules/bootstrap/",\
+          "packageDependencies": [\
+            ["bootstrap", "virtual:ee4c35fb4679b523f7156ef488b8a345aba160cd2cc4d6cd0f7fbf7f7195236acb337ebbb5fcb30d6226b701524f166a494bf6553f85b6eb77c82d4861f0c29f#npm:5.2.3"],\
+            ["@popperjs/core", null],\
+            ["@types/popperjs__core", null]\
+          ],\
+          "packagePeers": [\
+            "@popperjs/core",\
+            "@types/popperjs__core"\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["jquery", [\
@@ -78,6 +101,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["projet_tp", "workspace:."],\
+            ["bootstrap", "virtual:ee4c35fb4679b523f7156ef488b8a345aba160cd2cc4d6cd0f7fbf7f7195236acb337ebbb5fcb30d6226b701524f166a494bf6553f85b6eb77c82d4861f0c29f#npm:5.2.3"],\
             ["jquery", "npm:3.6.3"],\
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"],\
