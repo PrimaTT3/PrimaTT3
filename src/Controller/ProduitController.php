@@ -3,9 +3,11 @@
 namespace App\Controller;
 
 use App\Entity\Produit;
+use App\Repository\ProduitRepository;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Validator\Validator\ValidatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class ProduitController extends AbstractController
@@ -14,7 +16,7 @@ class ProduitController extends AbstractController
     public function createProduit(ManagerRegistry $doctrine): Response
     {
         $entityManager = $doctrine->getManager();
-        
+
         $produit = new Produit();
         $produit->setNom('Clavier');
         $produit->setPrix(1999);
@@ -38,10 +40,11 @@ class ProduitController extends AbstractController
             );
         }
 
-        return new Response('Check out this great produit: '.$produit->getName());
+        return new Response('Check out this great produit: '.$produit->getNom());
 
         // or render a template
         // in the template, print things with {{ produit.name }}
         // return $this->render('produit/show.html.twig', ['produit' => $produit]);
     }
+
 }
